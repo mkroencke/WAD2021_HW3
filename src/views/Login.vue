@@ -16,7 +16,7 @@
         <a href="#">Create an Account</a>
         <p>Or</p>
         <p>Please Log In</p>
-        <form action="">
+        <form action="\">
           <input type="text" placeholder="Email" /><br />
           <input type="password" placeholder="Password" />
           <div class="login-button-holder">
