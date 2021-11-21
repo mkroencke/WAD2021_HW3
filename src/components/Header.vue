@@ -18,7 +18,7 @@
             <div id="nav">
               <router-link :to="{ name: 'home' }">Home</router-link> |
               <router-link :to="{ name: 'login' }">Login</router-link> |
-              <router-link :to="{ name: 'contact' }">Contact</router-link>
+              <router-link :to="{ name: 'contact' }">Contact us</router-link>
             </div>
             <div id="userpic">
               <img src="@/assets/userpic.png" alt="User" width="40" />
