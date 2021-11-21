@@ -1,33 +1,29 @@
 <template>
-  <div class="header">
-    <header id="pageHeader">
+  <header class="header" id="pageHeader">
+    <div class="pageHeaderLeft">
+      <div id="logo">
+        <router-link :to="{ name: 'home' }"
+          ><img src="@/assets/postit-logo.png" alt="PostIt" width="40"
+        /></router-link>
+      </div>
+    </div>
+    <div class="pageHeaderCenter">
+      <div id="search">
+        <input type="text" />
+        <button>Search</button>
+      </div>
+    </div>
+    <div class="pageHeaderRight">
       <nav>
-        <div class="navHeader">
-          <div class="navHeaderLeft">
-            <div id="logo">
-              <router-link :to="{ name: 'home' }"><img src="@/assets/postit-logo.png" alt="PostIt" width="40" /></router-link>
-            </div>
-          </div>
-          <div class="navHeaderCenter">
-            <div id="search">
-              <input type="text" />
-              <button>Search</button>
-            </div>
-          </div>
-          <div class="navHeaderRight">
-            <div id="nav">
-              <router-link :to="{ name: 'home' }">Home</router-link> |
-              <router-link :to="{ name: 'login' }">Login</router-link> |
-              <router-link :to="{ name: 'contact' }">Contact us</router-link>
-            </div>
-            <div id="userpic">
-              <img src="@/assets/userpic.png" alt="User" width="40" />
-            </div>
-          </div>
-        </div>
+        <router-link :to="{ name: 'home' }">Home</router-link> |
+        <router-link :to="{ name: 'login' }">Login</router-link> |
+        <router-link :to="{ name: 'contact' }">Contact us</router-link>
       </nav>
-    </header>
-  </div>
+      <div id="userpic">
+        <img src="@/assets/userpic.png" alt="User" width="40" />
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
@@ -39,22 +35,9 @@ export default {
 
 <style scoped lang="scss">
 #pageHeader {
-  width: 100%;
-  position: fixed;
-}
-
-header + img {
-  width: 100%;
-}
-
-header ~ p {
-  padding: 10px;
-  font-weight: bold;
-}
-
-header > nav {
   display: flex;
   position: fixed;
+  flex-direction: row;
   top: 0;
   left: 0;
   padding: 5px;
@@ -63,39 +46,32 @@ header > nav {
   justify-content: space-between;
 }
 
-.navHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.navHeaderLeft {
+.pageHeaderLeft {
   display: flex;
   justify-content: start;
   align-items: center;
   width: 30%;
 }
 
-.navHeaderCenter {
+.pageHeaderCenter {
   width: 40%;
   align-items: center;
   justify-content: center;
 }
 
-.navHeaderRight {
+.pageHeaderRight {
   display: flex;
   align-items: center;
   justify-content: end;
   width: 30%;
 }
 
-.navHeaderLeft,
-.navHeaderRight {
+.pageHeaderLeft,
+.pageHeaderRight {
   flex: 1;
 }
 
-#nav {
+nav {
   margin-right: 20px;
 }
 
