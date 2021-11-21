@@ -9,14 +9,23 @@
       <article v-for="post in postList" :key="post.id">
         <header class="post-info">
           <div class="header-user">
-            <img v-if="post.author.profilepic" :src="post.author.profilepic" alt="User" width="40" />
+            <img
+              v-if="post.author.profilepic"
+              :src="post.author.profilepic"
+              alt="User"
+              width="40"
+            />
             <p class="author">
               {{ post.author.firstname }} {{ post.author.lastname }}
             </p>
           </div>
           <time> {{ post.createdAt.date }} {{ post.createdAt.time }} </time>
         </header>
-        <img v-if="post.content.pic" :src="post.content.pic" :alt="post.content.alt" />
+        <img
+          v-if="post.content.pic"
+          :src="post.content.pic"
+          :alt="post.content.alt"
+        />
         <p>{{ post.content.text }}</p>
         <div class="like-button">
           <button v-on:click="incrementLikes(post)">
@@ -47,7 +56,7 @@ export default {
   },
   methods: {
     resetLikes: function () {
-      this.$store.commit("resetLikes", );
+      this.$store.commit("resetLikes");
     },
     incrementLikes: function (post) {
       this.$store.commit("incrementLikes", post);

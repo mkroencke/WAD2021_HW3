@@ -17,7 +17,7 @@ export default new Vuex.Store({
         content: {
           text: "Which weighs more, a pound of feathers or a pound of bricks?",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 2,
@@ -35,7 +35,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2021/05/29/20/20/hot-air-balloon-6294208_1280.jpg",
           alt: "Dark clouds",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 3,
@@ -53,7 +53,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2012/10/10/11/05/space-station-60615_960_720.jpg",
           alt: "Moon landing",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 4,
@@ -71,7 +71,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2017/09/28/18/22/tarte-flambee-2796419_960_720.jpg",
           alt: "Tarte flambée",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 5,
@@ -87,7 +87,7 @@ export default new Vuex.Store({
         content: {
           text: "To thine own self, be true.",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 6,
@@ -105,7 +105,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2017/01/25/12/31/bitcoin-2007769_960_720.jpg",
           alt: "Bitcoin",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 7,
@@ -121,7 +121,7 @@ export default new Vuex.Store({
         content: {
           text: "Life is what happens to us while we are making other plans.",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 8,
@@ -139,7 +139,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2015/10/12/14/59/milky-way-984050_960_720.jpg",
           alt: "Stars in the sky",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 9,
@@ -157,7 +157,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg",
           alt: "Coding",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 10,
@@ -175,7 +175,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_960_720.jpg",
           alt: "Home office",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 11,
@@ -191,7 +191,7 @@ export default new Vuex.Store({
         content: {
           text: "You must be the change you wish to see in the world.",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 12,
@@ -209,7 +209,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg",
           alt: "Puppy",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 13,
@@ -225,7 +225,7 @@ export default new Vuex.Store({
         content: {
           text: "Die with memories, not dreams.",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 14,
@@ -243,7 +243,7 @@ export default new Vuex.Store({
           pic: "https://cdn.pixabay.com/photo/2014/11/26/15/20/saxophone-546303_960_720.jpg",
           alt: "Instrument and notes",
         },
-        likes: 0
+        likes: 0,
       },
       {
         id: 15,
@@ -259,17 +259,19 @@ export default new Vuex.Store({
         content: {
           text: "Three can keep a secret, if two of them are dead.",
         },
-        likes: 0
+        likes: 0,
       },
     ],
   },
   mutations: {
-    resetLikes: function(state) {
-      state.posts.forEach(el => {el.likes = 0});
+    resetLikes: function (state) {
+      state.posts.forEach((el) => {
+        el.likes = 0;
+      });
     },
-    incrementLikes: function(state, post) {
+    incrementLikes: function (state, post) {
       post.likes++;
-    }
+    },
   },
   actions: {},
   modules: {},

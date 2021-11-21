@@ -1,19 +1,20 @@
 <template>
-  <Header/>
+  <Header />
   <router-view />
-  <Footer/>
+  <Footer />
 </template>
 
 <style lang="scss">
 * {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-html, body {
-    background-color: rgb(16, 114, 212);
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  background-color: rgb(16, 114, 212);
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>
 
@@ -24,8 +25,7 @@ import Footer from "./components/Footer";
 export default {
   components: {
     Footer,
-    Header
+    Header,
   },
-}
+};
 </script>
-

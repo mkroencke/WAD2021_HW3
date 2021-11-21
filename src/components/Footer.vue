@@ -1,15 +1,20 @@
 <template>
   <footer id="pageFooter">
     <div id="footerDiv">
-      <p><router-link id="footerLink" :to="{ name: 'contact' }">Contact us</router-link> © PostIt 2021</p>
+      <p>
+        <router-link id="footerLink" :to="{ name: 'contact' }"
+          >Contact us</router-link
+        >
+        © PostIt 2021
+      </p>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
-}
+  name: "Footer",
+};
 </script>
 
 <style scoped>
