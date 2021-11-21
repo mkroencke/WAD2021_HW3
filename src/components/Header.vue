@@ -5,7 +5,7 @@
         <div class="navHeader">
           <div class="navHeaderLeft">
             <div id="logo">
-              <router-link :to="{ name: 'main' }"><img src="@/assets/postit-logo.png" alt="PostIt" width="40" /></router-link>
+              <router-link :to="{ name: 'home' }"><img src="@/assets/postit-logo.png" alt="PostIt" width="40" /></router-link>
             </div>
           </div>
           <div class="navHeaderCenter">
@@ -16,7 +16,7 @@
           </div>
           <div class="navHeaderRight">
             <div id="nav">
-              <router-link :to="{ name: 'main' }">Main</router-link> |
+              <router-link :to="{ name: 'home' }">Home</router-link> |
               <router-link :to="{ name: 'login' }">Login</router-link> |
               <router-link :to="{ name: 'contact' }">Contact</router-link>
             </div>
