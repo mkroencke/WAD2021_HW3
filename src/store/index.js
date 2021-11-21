@@ -32,7 +32,7 @@ export default new Vuex.Store({
         },
         content: {
           text: "I think it's going to rain.",
-          pic: "https://cdn.pixabay.com/photo/2014/10/19/21/44/cloud-494739_960_720.jpg",
+          pic: "https://cdn.pixabay.com/photo/2021/05/29/20/20/hot-air-balloon-6294208_1280.jpg",
           alt: "Dark clouds",
         },
         likes: 0
