@@ -5,6 +5,7 @@
     <router-link to="/about">About</router-link>
   </div>-->
   <router-view />
+  <Footer/>
 </template>
 
 <style lang="scss">
@@ -43,9 +44,11 @@ html, body {
 
 <script>
 import Header from "@/components/Header.vue";
+import Footer from "./components/Footer";
 
 export default {
   components: {
+    Footer,
     Header
   },
 }
