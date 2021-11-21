@@ -124,6 +124,7 @@ header > nav {
 }
 
 #search > button {
+  font-weight: bold;
   box-sizing: border-box;
   border-radius: 0px 5px 5px 0px;
   border-style: solid;

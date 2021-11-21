@@ -122,6 +122,12 @@ header ~ p {
   background-color: rgb(16, 114, 212);
 }
 
+.like-button button:hover {
+  border-color: rgb(231, 250, 151);
+  background-color: rgb(231, 250, 151);
+  filter: invert(100%);
+}
+
 #pageHeader {
   width: 100%;
   position: fixed;
